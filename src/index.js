@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Example } from "./Example";
 import { Object, Usercard } from "./Object";
 import { Married } from "./Married";
+import { Task } from "./Task";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,6 +23,7 @@ function Greeting(props) {
 
 root.render(
   <>
+    <Task name = {false}/>
     {/* One way to show content 
     {Greeting()}
     */}
@@ -30,18 +32,24 @@ root.render(
     <Greeting></Greeting>
     */}
     {/* Self Close Syntax */}
+
+    {/*
     <Greeting title="hola" />
     <Married />
     <Object />
     <Example
-      name="Santi"
+      name = "Hola"
       id="123"
-      amount={3000}
+      amount={toString(true)}
       married={true}
       points={[99.3, 55.2, 22]}
       address={{ street: "cll 2", city: "new York" }}
       greet={function (){return alert("Hola")}}
     />
     <Usercard />
+    */}
   </>
 );
+
+
+
