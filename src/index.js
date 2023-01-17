@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Example } from "./Example";
-import { Object, Usercard } from "./Object";
-import { Married } from "./Married";
-import { Task } from "./Task";
-
+import { UseStateHook } from "./UseStateHook";
+import { UseEffectHook } from "./UseEffectHook";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //This is a component, ican repeat this code part anytimes in the root code
@@ -21,9 +18,12 @@ function Greeting(props) {
   );
 }
 
+
+
 root.render(
   <>
-    <Task name = {false}/>
+    <UseStateHook/>
+    <UseEffectHook/>
     {/* One way to show content 
     {Greeting()}
     */}
@@ -34,6 +34,8 @@ root.render(
     {/* Self Close Syntax */}
 
     {/*
+    <Form/>
+    <Users/>
     <Greeting title="hola" />
     <Married />
     <Object />
@@ -47,6 +49,7 @@ root.render(
       greet={function (){return alert("Hola")}}
     />
     <Usercard />
+    <Task name = {false}/>
     */}
   </>
 );
